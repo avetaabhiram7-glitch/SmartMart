@@ -1,0 +1,187 @@
+import java.util.Scanner;
+
+public class Main {
+
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        while (true) {
+            System.out.println("\n=====================================");
+            System.out.println(" SMARTMART SALES & INVENTORY SYSTEM");
+            System.out.println("=====================================");
+            System.out.println("1. Customer Management");
+            System.out.println("2. Product Management");
+            System.out.println("3. Order Management");
+            System.out.println("4. Reports");
+            System.out.println("5. Exit");
+            System.out.print("Enter your choice: ");
+
+            int choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    customerMenu();
+                    break;
+                case 2:
+                    productMenu();
+                    break;
+                case 3:
+                    orderMenu();
+                    break;
+                case 4:
+                    reportMenu();
+                    break;
+                case 5:
+                    System.out.println("Thank You!");
+                    System.exit(0);
+                default:
+                    System.out.println("Invalid Choice!");
+            }
+        }
+    }
+
+    static void customerMenu() {
+        while (true) {
+            System.out.println("\n----- CUSTOMER MANAGEMENT -----");
+            System.out.println("1. Add Customer");
+            System.out.println("2. Update Customer");
+            System.out.println("3. Delete Customer");
+            System.out.println("4. Search Customer");
+            System.out.println("5. View All Customers");
+            System.out.println("6. Back");
+            System.out.print("Enter Choice: ");
+
+            int ch = sc.nextInt();
+
+            switch (ch) {
+                case 1:
+                    System.out.println("Add Customer Selected");
+                    break;
+                case 2:
+                    System.out.println("Update Customer Selected");
+                    break;
+                case 3:
+                    System.out.println("Delete Customer Selected");
+                    break;
+                case 4:
+                    System.out.println("Search Customer Selected");
+                    break;
+                case 5:
+                    System.out.println("View All Customers Selected");
+                    break;
+                case 6:
+                    return;
+                default:
+                    System.out.println("Invalid Choice!");
+            }
+        }
+    }
+
+    static void productMenu() {
+        while (true) {
+            System.out.println("\n----- PRODUCT MANAGEMENT -----");
+            System.out.println("1. Add Product");
+            System.out.println("2. Update Product");
+            System.out.println("3. Delete Product");
+            System.out.println("4. Search Product");
+            System.out.println("5. View All Products");
+            System.out.println("6. Back");
+            System.out.print("Enter Choice: ");
+
+            int ch = sc.nextInt();
+
+            switch (ch) {
+                case 1:
+                    System.out.println("Add Product Selected");
+                    break;
+                case 2:
+                    System.out.println("Update Product Selected");
+                    break;
+                case 3:
+                    System.out.println("Delete Product Selected");
+                    break;
+                case 4:
+                    System.out.println("Search Product Selected");
+                    break;
+                case 5:
+                    System.out.println("View All Products Selected");
+                    break;
+                case 6:
+                    return;
+                default:
+                    System.out.println("Invalid Choice!");
+            }
+        }
+    }
+
+    static void orderMenu() {
+        while (true) {
+            System.out.println("\n----- ORDER MANAGEMENT -----");
+            System.out.println("1. Create Order");
+            System.out.println("2. Add Products");
+            System.out.println("3. Calculate Bill");
+            System.out.println("4. Print Invoice");
+            System.out.println("5. Back");
+            System.out.print("Enter Choice: ");
+
+            int ch = sc.nextInt();
+
+            switch (ch) {
+                case 1:
+                    System.out.println("Create Order Selected");
+                    break;
+                case 2:
+                    System.out.println("Add Products Selected");
+                    break;
+                case 3:
+                    System.out.println("Calculate Bill Selected");
+                    break;
+                case 4:
+                    System.out.println("Print Invoice Selected");
+                    break;
+                case 5:
+                    return;
+                default:
+                    System.out.println("Invalid Choice!");
+            }
+        }
+    }
+
+    static void reportMenu() {
+        while (true) {
+            System.out.println("\n----- REPORTS -----");
+            System.out.println("1. Total Sales");
+            System.out.println("2. Best Selling Product");
+            System.out.println("3. Customer Purchase Report");
+            System.out.println("4. Customers Without Orders");
+            System.out.println("5. Top Customers");
+            System.out.println("6. Back");
+            System.out.print("Enter Choice: ");
+
+            int ch = sc.nextInt();
+
+            switch (ch) {
+                case 1:
+                    System.out.println("Total Sales Report Selected");
+                    break;
+                case 2:
+                    System.out.println("Best Selling Product Report Selected");
+                    break;
+                case 3:
+                    System.out.println("Customer Purchase Report Selected");
+                    break;
+                case 4:
+                    System.out.println("Customers Without Orders Report Selected");
+                    break;
+                case 5:
+                    System.out.println("Top Customers Report Selected");
+                    break;
+                case 6:
+                    return;
+                default:
+                    System.out.println("Invalid Choice!");
+            }
+        }
+    }
+}
